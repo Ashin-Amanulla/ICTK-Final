@@ -1,0 +1,144 @@
+h2 {
+    font-weight: 400
+}
+
+h3 {
+    font-weight: 400
+}
+
+h4 {
+    font-weight: 500
+}
+
+.cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 155px
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text,
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number,
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date,
+.cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea,
+.cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select,
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz {
+    background-color: #f5f6ff;
+    border-color: #f5f6ff
+}
+
+.cf7_custom_style_1 p {
+    line-height: 50px
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+    background-color: #58468c
+}
+
+.cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 155px
+}
+
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text,
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number,
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date,
+.cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea,
+.cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select,
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz {
+    background-color: #fff;
+    border-color: #fff
+}
+
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 59px;
+    padding-right: 59px
+}
+
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+    background-color: #58468c
+}
+
+.cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 134px
+}
+
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-text,
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-number,
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-date,
+.cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea,
+.cf7_custom_style_3 select.wpcf7-form-control.wpcf7-select,
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-quiz {
+    background-color: #f5f6ff;
+    border-color: #f5f6ff
+}
+
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 59px;
+    padding-right: 59px
+}
+
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+    background-color: #58468c
+}
+
+.error404 .mkdf-page-header .mkdf-menu-area {
+    background-color: transparent !important
+}
+
+.error404 .mkdf-content {
+    background-image: url(https://foton.qodeinteractive.com/wp-content/uploads/2018/06/p11-title-img.jpg);
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.error404 .mkdf-page-not-found .mkdf-404-title {
+    font-size: 55px;
+    line-height: 0
+}
+
+.error404 .mkdf-page-not-found .mkdf-404-text {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 200
+}
+
+nav.mkdf-fullscreen-menu ul li,
+.mkdf-fullscreen-above-menu-widget-holder,
+.mkdf-fullscreen-below-menu-widget-holder {
+    text-align: left
+}
+
+.mkdf-header-box .mkdf-top-bar-background {
+    height: 98px
+}
+
+.mkdf-search-opener {
+    color: #58468c
+}
+
+.mkdf-side-menu a.mkdf-close-side-menu:hover {
+    color: #ff8a73
+}
+
+.mkdf-title-holder .mkdf-title-wrapper .mkdf-page-subtitle {
+    font-size: 22px;
+    line-height: 33px
+}

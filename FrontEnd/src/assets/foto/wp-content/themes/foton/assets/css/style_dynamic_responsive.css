@@ -1,0 +1,46 @@
+@media only screen and (max-width:1024px) {}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    h1 {
+        font-size: 60px
+    }
+    h2 {
+        font-size: 50px
+    }
+    h3 {
+        font-size: 43px
+    }
+}
+
+@media only screen and (min-width:681px) and (max-width:768px) {
+    h1 {
+        font-size: 50px
+    }
+    h2 {
+        font-size: 42px
+    }
+    h3 {
+        font-size: 36px
+    }
+}
+
+@media only screen and (max-width:680px) {
+    h1 {
+        font-size: 32px
+    }
+    h2 {
+        font-size: 28px
+    }
+    h3 {
+        font-size: 24px
+    }
+    h4 {
+        font-size: 20px
+    }
+    .error404 .mkdf-page-not-found .mkdf-404-title {
+        font-size: 32px
+    }
+    .error404 .mkdf-page-not-found .mkdf-404-text {
+        font-size: 18px
+    }
+}
