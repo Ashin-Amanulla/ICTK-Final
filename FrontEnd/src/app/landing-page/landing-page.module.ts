@@ -14,6 +14,11 @@ import { PartnershipComponent } from './Offerings/partnership/partnership.compon
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
+import { EventsMainComponent } from './ICTAK-Events/events-main/events-main.component';
+import { DigiWorkshopComponent } from './ICTAK-Events/digi-workshop/digi-workshop.component';
+import { RpaComponent } from './ICTAK-Events/rpa/rpa.component';
+import { MlAiComponent } from './ICTAK-Events/ml-ai/ml-ai.component';
+import { SalesforceComponent } from './ICTAK-Events/salesforce/salesforce.component';
 
 
 @NgModule({
@@ -30,6 +35,11 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
     HomeMainComponent,
     ContactComponent,
     AboutMainComponent,
+    EventsMainComponent,
+    DigiWorkshopComponent,
+    RpaComponent,
+    MlAiComponent,
+    SalesforceComponent,
   ],
   imports: [
     CommonModule,
