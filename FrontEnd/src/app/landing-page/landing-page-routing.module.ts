@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMainComponent } from './About/about-main/about-main.component';
 import { HomeMainComponent } from './Home/home-main/home-main.component';
+import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
 import { PartnershipComponent } from './Offerings/partnership/partnership.component';
 
 const routes: Routes = [
@@ -17,7 +18,12 @@ const routes: Routes = [
     {
       path: 'partenship',
       component: PartnershipComponent
+    },
+    {
+      path: 'partenshipform',
+      component: PartenshipformComponent
     }
+
   
 ];
 
