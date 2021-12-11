@@ -14,6 +14,7 @@ import { PartnershipComponent } from './Offerings/partnership/partnership.compon
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
+import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
     HomeMainComponent,
     ContactComponent,
     AboutMainComponent,
+    PartenshipformComponent,
   ],
   imports: [
     CommonModule,
