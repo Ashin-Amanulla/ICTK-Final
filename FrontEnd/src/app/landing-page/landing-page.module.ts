@@ -15,6 +15,7 @@ import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
 import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PartenshipformComponent } from './Offerings/partnership/partenshipform/
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    FormsModule
   ]
 })
 export class LandingPageModule { }
