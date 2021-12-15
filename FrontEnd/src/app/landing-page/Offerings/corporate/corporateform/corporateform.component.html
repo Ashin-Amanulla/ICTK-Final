@@ -1,0 +1,95 @@
+<p>corporateform works!</p>
+
+
+<section class="background">
+
+    <div class="container">
+        <h1>
+            Partnership Form
+        </h1>
+    </div>
+    <div class="container">
+
+        <form #usersignup="ngForm" (ngSubmit)="newcorporate()" >
+           
+            <div class="row">
+                <div class="six columns">
+                    <label>
+
+                    </label>
+                    <input class="u-full-width form-control" type="text" name="name" placeholder="Name" #name="ngModel" [(ngModel)]="partnerform.name"  required/>
+
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="email" name="useremail" placeholder=" Email" class="form-control" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"  [(ngModel)]="partnerform.email"
+                     required pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
+                </div>
+            </div>
+           
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text" class="form-control"  name="contact" placeholder=" Contact Number" #contact="ngModel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" [(ngModel)]="partnerform.contact" required />
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" class="form-control"  name="firm" placeholder="Name of the firm" #firm="ngModel" [(ngModel)]="partnerform.firm"  required/>
+                </div>
+            </div>
+          
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text" name="address" class="form-control" placeholder="Address" [(ngModel)]="partnerform.address" required  />
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text"  name="district" class="form-control" placeholder="Distict" #district="ngModel" [(ngModel)]="partnerform.district" required/>
+                </div>
+            </div>
+
+           
+            <br>
+            <div class="row">
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width" type="text"  name="officeSpace" class="form-control" placeholder=" Office Space in Square Feet" #space="ngModel" [(ngModel)]="partnerform.space" required/>
+                </div>
+                <div class="six columns">
+                    <label>
+                    </label>
+                    <input class="u-full-width " type="text" name="count" class="form-control"  placeholder="Number of Employees" #count="ngModel" [(ngModel)]="partnerform.count" required/>
+                </div>
+            </div>
+            
+            <br>
+            <label>
+            </label>
+            <input class="u-full-width " type="text" name="report" class="form-control" #report="ngModel" placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?" [(ngModel)]="partnerform.report" required/>
+
+            <br><br>
+            <label>
+            </label>
+            <input class="u-full-width box1" type="text" name="expect" class="form-control" #expect="ngModel" placeholder="What are you expecting in partnering with ICT academy of Kerala?" [(ngModel)]="partnerform.expect" required/>
+
+            <br><br>
+            <label>
+            </label>
+            <input class="u-full-width box1" type="text" name="profile"  placeholder="Brief Profile of the promoters" #profile="ngModel" [(ngModel)]="partnerform.profile" required/>
+         
+            <br><br>
+            <input class="button-primary" type="submit" [disabled]="usersignup.form.invalid" value="Submit">
+        </form>
+    </div>
+</section>
+
+
