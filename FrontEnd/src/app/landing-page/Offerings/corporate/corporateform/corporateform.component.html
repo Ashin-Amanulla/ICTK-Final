@@ -1,95 +1,186 @@
-<p>corporateform works!</p>
 
 
-<section class="background">
+<div class="container add1">
+    <h1>
+        Membership Form
+    </h1>
+</div>
+<div class="container">
 
-    <div class="container">
-        <h1>
-            Partnership Form
-        </h1>
-    </div>
-    <div class="container">
+    <form >
+        <!-- First row -->
+        <div class="row">
+            <div class="six columns">
+                <label>
 
-        <form #usersignup="ngForm" (ngSubmit)="newcorporate()" >
-           
-            <div class="row">
-                <div class="six columns">
-                    <label>
-
-                    </label>
-                    <input class="u-full-width form-control" type="text" name="name" placeholder="Name" #name="ngModel" [(ngModel)]="partnerform.name"  required/>
-
-                </div>
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width " type="email" name="useremail" placeholder=" Email" class="form-control" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"  [(ngModel)]="partnerform.email"
-                     required pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
-                </div>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.name" name="name" placeholder="Name"
+                   value="" />
             </div>
-           
-            <br>
-            <div class="row">
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width" type="text" class="form-control"  name="contact" placeholder=" Contact Number" #contact="ngModel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" [(ngModel)]="partnerform.contact" required />
-                </div>
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width " type="text" class="form-control"  name="firm" placeholder="Name of the firm" #firm="ngModel" [(ngModel)]="partnerform.firm"  required/>
-                </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.address" name="address"
+                    placeholder=" Address" value=""  />
             </div>
-          
-            <br>
-            <div class="row">
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width" type="text" name="address" class="form-control" placeholder="Address" [(ngModel)]="partnerform.address" required  />
-                </div>
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width " type="text"  name="district" class="form-control" placeholder="Distict" #district="ngModel" [(ngModel)]="partnerform.district" required/>
-                </div>
+        </div>
+        <!-- Second row -->
+        <br>
+        <div class="row">
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.website" name="website"
+                    placeholder=" Website" value=""  />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.head" name="head"
+                    placeholder="Head of the organisation" value=""  />
+            </div>
+        </div>
+        <!-- third row -->
+        <br>
+        <div class="row">
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.nature" name="nature"
+                    placeholder="Nature of the Organization (Product/Services)" value=""  />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <select   [(ngModel)]="corporform.typeof" >
+                    <option value="">Type of the Company</option>
+                    <option *ngFor="let pvt of pvts" [ngValue]="pvt">{{pvt}}</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Fourth row -->
+        <br>
+        <div class="row">
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.identityNo" name="identityNo"
+                    placeholder=" Corporate identity Number" value=""  />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.GST" name="GST" placeholder="GST Number"
+                    value=""  />
+            </div>
+        </div>
+
+        <!-- point of contact  -->
+
+        <div class="container add1">
+            <h1>
+                Point of Contact
+            </h1>
+        </div>
+
+        <!-- First row -->
+        <div class="row">
+            <div class="six columns">
+                <label>
+
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.nameofContact" name="nameofContact"
+                    placeholder="Name"  value="" />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.phone" name="phone"
+                    placeholder=" Contact Number" value="" />
+            </div>
+        </div>
+        <!-- Second row -->
+        <br>
+        <div class="row">
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.email" name="email" placeholder=" email"
+                    value=""  />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.TechnicalSkill" name="TechnicalSkill"
+                    placeholder="TechnicalSkillsets commonly used in the organisation" value=""
+                    />
+            </div>
+        </div>
+
+        <!-- Third row -->
+        <br>
+        <div class="row">
+            <div class="six columns">
+                <label>
+                </label>
+                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.employeeCount" name="employeeCount"
+                    placeholder=" employeeCount" value="" />
+            </div>
+            <div class="six columns">
+                <label>
+                </label>
+                <select  [(ngModel)]="corporform.hire">
+                    <option value="">Average yearly fresher hiring in your company </option>
+                    <option *ngFor="let hire of hires" [ngValue]="hire">{{hire}}</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Fourth row -->
+        <br>
+        <div class="row">
+
+            <div class="six columns">
+                <label>
+                </label>
+                <select [(ngModel)]="corporform.patents" >
+                    <option value="">Number of Patents per Year</option>
+                    <option *ngFor="let patent of patents" [ngValue]="patent">{{patent}}</option>
+                </select>
             </div>
 
-           
-            <br>
-            <div class="row">
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width" type="text"  name="officeSpace" class="form-control" placeholder=" Office Space in Square Feet" #space="ngModel" [(ngModel)]="partnerform.space" required/>
-                </div>
-                <div class="six columns">
-                    <label>
-                    </label>
-                    <input class="u-full-width " type="text" name="count" class="form-control"  placeholder="Number of Employees" #count="ngModel" [(ngModel)]="partnerform.count" required/>
-                </div>
+            <div class="six columns">
+       
+                <ng-select  bindLabel="name" placeholder="How do you wish to collaborate" appendTo="body"
+                     [(ngModel)]="corporform.collaborate" >
+                </ng-select>
+
+
             </div>
-            
-            <br>
-            <label>
-            </label>
-            <input class="u-full-width " type="text" name="report" class="form-control" #report="ngModel" placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?" [(ngModel)]="partnerform.report" required/>
 
-            <br><br>
-            <label>
-            </label>
-            <input class="u-full-width box1" type="text" name="expect" class="form-control" #expect="ngModel" placeholder="What are you expecting in partnering with ICT academy of Kerala?" [(ngModel)]="partnerform.expect" required/>
-
-            <br><br>
-            <label>
-            </label>
-            <input class="u-full-width box1" type="text" name="profile"  placeholder="Brief Profile of the promoters" #profile="ngModel" [(ngModel)]="partnerform.profile" required/>
-         
-            <br><br>
-            <input class="button-primary" type="submit" [disabled]="usersignup.form.invalid" value="Submit">
-        </form>
-    </div>
-</section>
+        </div>
 
 
+
+        <!-- textbox -->
+
+
+        <br><br>
+        <label>
+        </label>
+        <input class="u-full-width form-control box1" type="text"
+            placeholder="Any academic interface program/ activities conducted by your organization? if so please provide the details"
+            [(ngModel)]="corporform.details" name="details" value=""  />
+
+
+
+        <!-- submit -->
+        <br><br>
+        <input class="button-primary" type="submit"
+            value="Submit" >
+    </form>
+</div>
+
+
+<app-footer></app-footer>

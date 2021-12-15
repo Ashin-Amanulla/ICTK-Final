@@ -376,7 +376,7 @@ td, th {
 }
 
 .page-top-banner {
-  background: url(/assets/images/about-header.jpg);
+  background: url(../img/about-header.jpg);
   background-size: cover;
 }
 .page-top-banner .overlay-bg {
@@ -1400,7 +1400,7 @@ td, th {
   margin: 20px 0px;
 }
 .banner-section .banner-right {
-  background: url(/assets/images/screen-bg.png) center no-repeat;
+  background: url(../img/screen-bg.png) center no-repeat;
   background-size: contain;
 }
 .banner-section .banner-right img {
@@ -1481,13 +1481,13 @@ td, th {
 }
 
 .banner-section2 {
-  background: url(/assets/images/banner2.jpg);
+  background: url(../img/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .banner-section2 .overlay-bg {
-  background: url(/assets/images/banner-overlay1.png);
+  background: url(../img/banner-overlay1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1508,13 +1508,13 @@ td, th {
 }
 
 .banner-section3 {
-  background: url(/assets/images/banner3.jpg);
+  background: url(../img/banner3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .banner-section3 .overlay-bg {
-  background: url(/assets/images/banner-overlay.png);
+  background: url(../img/banner-overlay.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1570,7 +1570,7 @@ td, th {
 }
 
 .feature-section {
-  background: url(/assets/images/feature-bg.png) center no-repeat;
+  background: url(../img/feature-bg.png) center no-repeat;
   background-size: cover;
 }
 .feature-section .header-left h1 {
@@ -1641,7 +1641,7 @@ td, th {
 }
 
 .explore-section {
-  background: url(/assets/images/explore.jpg) right top no-repeat;
+  background: url(../img/explore.jpg) right top no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -1796,12 +1796,12 @@ td, th {
 /*  About Styles 
 /* =================================== */
 .about-section .overlay-bg1 {
-  background: url(/assets/images/bg2.png);
+  background: url(../img/bg2.png);
   background-size: cover;
   background-position: center;
 }
 .about-section .overlay-bg2 {
-  background: url(/assets/images/bg.png);
+  background: url(../img/bg.png);
   background-size: cover;
   background-position: center;
 }
@@ -2647,6 +2647,7 @@ td, th {
   top: 50%;
   right: 10px;
   font-family: 'FontAwesome';
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -2696,7 +2697,7 @@ td, th {
 /*  CTA Styles 
 /* =================================== */
 .cta-section {
-  background: url(/assets/images/banner2.jpg);
+  background: url(../img/banner2.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -2786,7 +2787,7 @@ td, th {
 /*  Download Styles 
 /* =================================== */
 .download-section {
-  background: url(/assets/images/download-bg.png);
+  background: url(../img/download-bg.png);
 }
 .download-section p {
   margin-top: 20px;
@@ -2859,7 +2860,7 @@ td, th {
 /*  Contact Styles 
 /* =================================== */
 .contact-section {
-  background: url(/assets/images/download-bg.png);
+  background: url(../img/download-bg.png);
   border-bottom: 100px solid #222;
 }
 .contact-section .section-title {

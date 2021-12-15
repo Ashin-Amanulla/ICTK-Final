@@ -9,20 +9,45 @@ export class CorporateformComponent implements OnInit {
 
   constructor() { }
 
+  categories = [
+    'Providing experts for skill sessions',
+     'Fresher hiring',
+    'Internships',
+    'Employee training in technologysoft skills',
+    'Capstone Projects assistance',
+  ];
+    
+
+
+
+  pvts = ['Public', 'Private', 'Quasi-Govt', 'PPP', 'Proprietorship']
+  hires = ['1-10', '11-20', '21-30','31-40', '41-50']
+  patents = ['1-10', "10>",'NA']
+
+
   ngOnInit(): void {
   }
-  partnerform:any = {
+  corporform:any =  {
+
     name: '',
-    email: '',
-    contact: '',
-    firm: '',
     address: '',
-    district: '',
-    Space: '',
-    report: '',
-    expect: '',
-    profile: '',
-    count: ''
+    website: '',
+    head: '',
+    nature: '',
+    typeof: '',
+    identityNo: '',
+    GST: '',
+    date: '',
+    nameofContact: '',
+    phone: '',
+    email: '',
+    TechnicalSkill: '',
+    employeeCount: '',
+    hire: '',
+    patents: '',
+    collaborate: '',
+    details: ''
+
   }
 
   newcorporate(){
