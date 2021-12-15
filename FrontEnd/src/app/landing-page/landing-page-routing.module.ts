@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMainComponent } from './About/about-main/about-main.component';
 import { HomeMainComponent } from './Home/home-main/home-main.component';
+import { CorporateComponent } from './Offerings/corporate/corporate.component';
 import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
 import { PartnershipComponent } from './Offerings/partnership/partnership.component';
 
@@ -22,6 +23,10 @@ const routes: Routes = [
     {
       path: 'partenshipform',
       component: PartenshipformComponent
+    },
+    {
+      path: 'corporate',
+      component: CorporateComponent
     }
 
   
