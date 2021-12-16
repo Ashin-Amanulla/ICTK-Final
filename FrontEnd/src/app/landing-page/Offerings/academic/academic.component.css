@@ -19,14 +19,15 @@
    }   
    .newpar{
 	line-height: 2;
-	text-align: center;
+	text-align: justify;
 	color: white;
 	font-weight: bold;
+	font-size: 1.2em;
    }
    .newhd{
 	   font-weight: 700;
 	   text-align: center;
-	   font-size: 3.5em;
+	   
 	   color: white;
    }
    .btnew{

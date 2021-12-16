@@ -1,0 +1,39 @@
+<head>
+    <link href="/assets/css/corporate.css" rel="stylesheet">
+</head>
+
+<p>academiccollaborations works!</p>
+<div class="col-lg-12" style="background: yellow;">
+    <div class="card-badge" *ngIf='(regstatus==true)'><strong>Admissions Open</strong>
+    </div>
+    <div class="card-badge" *ngIf='(regstatus==false)'> <a class="primary-btn" href="">Admissions Closed</a> 
+    </div>
+</div>
+   
+<div class='card-body'>            
+    <div class='table-responsive' style="margin-left:3%;margin-right:3%;">
+      <table class='table bg-pic' 
+            *ngIf = 'members && members.length'>
+        <thead class="tablehead">
+          <tr>
+                <th class="left">Product</th>
+            <th class="left">Code</th>
+            <th class="left">Available</th>
+            <th class="left">Price</th>          
+          </tr>
+         
+        </thead>
+        <tbody>  
+            <tr *ngFor='let member of members'>
+                 
+                <td class="left">{{ member.slno }}</td>
+                <td class="left">{{ member.membid }}</td>
+                <td class="left">{{ member.name }}</td>
+                <td class="left">{{ member.webaddress }}</td>               
+            </tr>
+               
+                          
+        </tbody>
+      </table>
+    </div>
+  </div>

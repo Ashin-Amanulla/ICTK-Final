@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutMainComponent } from './About/about-main/about-main.component';
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { AcademicComponent } from './Offerings/academic/academic.component';
+import { AcademiccollaborationsComponent } from './Offerings/academic/academiccollaborations/academiccollaborations.component';
 import { CorporateComponent } from './Offerings/corporate/corporate.component';
 import { CorporateformComponent } from './Offerings/corporate/corporateform/corporateform.component';
 import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
     {
       path: 'academic',
       component: AcademicComponent
+    },
+    {
+      path: 'academiccollaboarations',
+      component: AcademiccollaborationsComponent
     }
 
   

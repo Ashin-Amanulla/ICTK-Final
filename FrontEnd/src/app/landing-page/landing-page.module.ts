@@ -17,6 +17,7 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
 import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
 import { FormsModule } from '@angular/forms';
 import { CorporateformComponent } from './Offerings/corporate/corporateform/corporateform.component';
+import { AcademiccollaborationsComponent } from './Offerings/academic/academiccollaborations/academiccollaborations.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { CorporateformComponent } from './Offerings/corporate/corporateform/corp
     AboutMainComponent,
     PartenshipformComponent,
     CorporateformComponent,
+    AcademiccollaborationsComponent,
   ],
   imports: [
     CommonModule,
