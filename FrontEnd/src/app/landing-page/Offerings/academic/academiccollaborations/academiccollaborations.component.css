@@ -5,3 +5,34 @@
     background: rgb(101, 25, 241);
     color:white;
 }
+.academiccolab{
+    background: url("/assets/images/academiccollab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 5%;
+}
+.newpos{
+    padding-top: 5%;
+}
+.newpar{
+	line-height: 2;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+   }
+   .newhd{
+	   font-weight: 700;
+	   text-align: center;
+	   
+	   color: white;
+   }
+   .tabheading{
+       padding-top: 3%;
+       padding-bottom: 3%;
+       text-align: center;
+   }

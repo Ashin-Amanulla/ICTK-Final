@@ -2,15 +2,20 @@
     <link href="/assets/css/corporate.css" rel="stylesheet">
 </head>
 
-<p>academiccollaborations works!</p>
-<div class="col-lg-12" style="background: yellow;">
-    <div class="card-badge" *ngIf='(regstatus==true)'><strong>Admissions Open</strong>
+
+<div class="col-lg-12" class="academiccolab">
+  <h2>Premium Membership Form</h2>
+  <p class="newpar">Existing Premium Member colleges are requested to submit the membership renewal request. Click the Existing Member Renewal Form and submit needed details.
+    <br>New institutions are requested to submit the New membership Application form.
+  </p>
+    <div class="card-badge newpos" *ngIf='(regstatus==true)'><a class="primary-btn" href="LandingPage/academiccollaboarations">Admissions Open</a>
     </div>
-    <div class="card-badge" *ngIf='(regstatus==false)'> <a class="primary-btn" href="">Admissions Closed</a> 
+    <div class="card-badge newpos" *ngIf='(regstatus==false)'> <a class="primary-btn" href="LandingPage/academiccollaboarations">Admissions Closed</a> 
     </div>
 </div>
    
-<div class='card-body'>            
+<div class='card-body'>  
+ <h2 class="tabheading">ICTAK Premium Member Colleges (2021 - 2022)</h2>           
     <div class='table-responsive' style="margin-left:3%;margin-right:3%;">
       <table class='table bg-pic' 
             *ngIf = 'members && members.length'>

@@ -5,8 +5,17 @@
     background-size: cover;
 }
 
-h1{
-    color:rgb(131, 8, 8);
+h2{
+   padding-top: 5%;
+   padding-bottom: 5%;
     text-align: center;
 }
+.partbut{
+    background: rgb(101, 25, 241);    
+    color:white;
+}
+.partensfor{
+    text-align: center;
+    color:white
+    }
 

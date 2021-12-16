@@ -3,9 +3,9 @@
 </head>
 
 <div class="container add1">
-    <h1>
+    <h2>
         Membership Form
-    </h1>
+    </h2>
 </div>
 <div class="container">
 
@@ -54,8 +54,8 @@
             <div class="six columns">
                 <label>
                 </label>
-                <select   [(ngModel)]="corporform.typeof" >
-                    <option value="">Type of the Company</option>
+                <select class="custom-select"   [(ngModel)]="corporform.typeof" >
+                    <option >Type of the Company</option>
                     <option *ngFor="let pvt of pvts" [ngValue]="pvt">{{pvt}}</option>
                 </select>
             </div>
@@ -81,9 +81,9 @@
         <!-- point of contact  -->
 
         <div class="container add1">
-            <h1>
+            <h2>
                 Point of Contact
-            </h1>
+            </h2>
         </div>
 
         <!-- First row -->
@@ -132,7 +132,7 @@
             <div class="six columns">
                 <label>
                 </label>
-                <select  [(ngModel)]="corporform.hire">
+                <select class="custom-select"  [(ngModel)]="corporform.hire">
                     <option value="">Average yearly fresher hiring in your company </option>
                     <option *ngFor="let hire of hires" [ngValue]="hire">{{hire}}</option>
                 </select>
@@ -171,7 +171,7 @@
         <br><br>
         <label>
         </label>
-        <input class="u-full-width form-control box1" type="text"
+        <input class="u-full-width form-control boxer" type="text"
             placeholder="Any academic interface program/ activities conducted by your organization? if so please provide the details"
             [(ngModel)]="corporform.details" name="details" value=""  />
 

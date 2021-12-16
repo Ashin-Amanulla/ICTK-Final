@@ -1,12 +1,32 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 .background{
     background: url(/assets/images/feature-bg.png) center no-repeat;
     background-size: cover;
 }
 
-h1{
-    color:rgb(131, 8, 8);
+h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
     text-align: center;
+}
+
+
+
+
+.boxer{
+    height:100px !important;
+}
+
+input.ng-pristine {
+    border-color:black;
+}
+
+input.ng-touched.ng-invalid {
+    border-color:red;
+}
+
+input.ng-touched.ng-valid {
+    border-color:green;
 }

@@ -1,11 +1,13 @@
-<head></head>
+<head>
+    <link href="/assets/css/corporate.css" rel="stylesheet">	
+</head>
 
 <section class="background">
 
     <div class="container">
-        <h1>
+        <h2>
             Partnership Form
-        </h1>
+        </h2>
     </div>
     <div class="container">
 
@@ -86,7 +88,9 @@
             <input class="u-full-width box1" type="text" name="profile"  placeholder="Brief Profile of the promoters" #profile="ngModel" [(ngModel)]="partnerform.profile" required/>
          
             <br><br>
-            <input class="button-primary" type="submit" [disabled]="usersignup.form.invalid" value="Submit">
+            <div class="partensfor">
+            <input class="primary-btn partbut" type="submit" [disabled]="usersignup.form.invalid" value="Submit" >
+        </div>
         </form>
     </div>
 </section>
