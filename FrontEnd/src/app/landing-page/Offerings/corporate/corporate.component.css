@@ -21,7 +21,7 @@
    .newpar{
 	line-height: 2em;
 	text-align: center;
-	color: black;
+	color: white;
 	font-weight: bold;
 	font-size: 1.5em;
 	
@@ -29,7 +29,7 @@
    .newhd{
 	   font-weight: 700;
 	   text-align: center;
-	   color: black;
+	   color: white;
 	   
    }
    .btnew{
@@ -49,19 +49,11 @@
    .text_white {
 	color: #fff !important;
 }
-.counter{
-    background-color: black;
-}
+
 .partnerdemo{
 	background: url("/assets/images/coppar.jpg");
    padding-top: 5%;
    
 }
-.benefitsbox{
-    border: 1px solid green;
-    padding-top: 1%;
-    height: 60vh;
-    text-align: justify;
-    
-}
+
 
