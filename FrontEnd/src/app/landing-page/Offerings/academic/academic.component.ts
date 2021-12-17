@@ -12,35 +12,50 @@ export class AcademicComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  rpa: number = 0;
+  fdp: number = 0;
   fsd: number = 0;
-  sf: number = 0;
- 
+  sf: number = 0; 
   ms:number = 0;
+  vi:number = 0;
+  op:number = 0;
 
-  rpastop: any = setInterval(() => {
-    this.rpa++;    
-    if (this.rpa == 89) {     
-      clearInterval(this.rpastop);
+  fdpstop: any = setInterval(() => {
+    this.fdp++;    
+    if (this.fdp == 647) {     
+      clearInterval(this.fdpstop);
     }
   }, 10)
   fsdstop: any = setInterval(() => {
     this.fsd++;    
-    if (this.fsd == 232) {
+    if (this.fsd == 310) {
       clearInterval(this.fsdstop);
     }
   }, 10)
   sfstop: any = setInterval(() => {
     this.sf++;
-     if (this.sf == 253) {
+     if (this.sf == 562) {
        clearInterval(this.sfstop);
     }
   }, 10)
 
   msstop: any = setInterval(() => {
     this.ms++;
-    if (this.ms == 63) {
+    if (this.ms == 346) {
       clearInterval(this.msstop);
+    }
+  }, 10)
+
+  vistop: any = setInterval(() => {
+    this.vi++;
+    if (this.vi == 143) {
+      clearInterval(this.vistop);
+    }
+  }, 10)
+
+  opstop: any = setInterval(() => {
+    this.op++;
+    if (this.op == 431) {
+      clearInterval(this.opstop);
     }
   }, 10)
 
