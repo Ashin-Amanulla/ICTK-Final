@@ -17,18 +17,11 @@ export class CorporateformComponent implements OnInit {
     'Capstone Projects assistance',
   ];
     
-
-
-
   pvts = ['Public', 'Private', 'Quasi-Govt', 'PPP', 'Proprietorship']
   hires = ['1-10', '11-20', '21-30','31-40', '41-50']
   patents = ['1-10', "10>",'NA']
 
-
-
-
   corporate = {
-
     name: '',
     address: '',
     website: '',
@@ -47,14 +40,11 @@ export class CorporateformComponent implements OnInit {
     patents: '',
     collaborate: '',
     details: ''
-
   }
-
-
 
   constructor(private fb: FormBuilder ) { }
 
-  addCorporateForm = this.fb.group(
+  validateCorporateForm = this.fb.group(
     {
 
       name: ['', Validators.required],
@@ -67,7 +57,10 @@ export class CorporateformComponent implements OnInit {
       GST: ['', Validators.required],
       date: ['', Validators.required],
       nameofContact: ['', Validators.required],
-      phone: ['', Validators.required],
+      phone: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$')
+      ])],
       email: ['',  Validators.compose([
         Validators.required,
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
@@ -78,21 +71,11 @@ export class CorporateformComponent implements OnInit {
       patents: [Validators.required],
       collaborate: [ Validators.required],
       details: ['', Validators.required]
-
     }
   )
-
-
-
-
-  addCorporate() {
-
-
-   
+  newCorporate() {
+    alert("success")   
   }
-
-
-
   ngOnInit() {
     
   }

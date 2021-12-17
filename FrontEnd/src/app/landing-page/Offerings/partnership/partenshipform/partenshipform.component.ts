@@ -29,11 +29,17 @@ export class PartenshipformComponent implements OnInit {
 
   constructor(private fb: FormBuilder  ) { }
 
-  addPartnerForm = this.fb.group(
+  validatePartnerForm = this.fb.group(
     {
       name: ['', Validators.required],
-      email: ['', Validators.required],
-      phone: ['', Validators.required],
+      email: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+      ])],
+      phone: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$')
+      ])],
       firm: ['', Validators.required],
       address: ['', Validators.required],
       district: ['', Validators.required],
@@ -46,14 +52,8 @@ export class PartenshipformComponent implements OnInit {
     }
   )
 
-  
-
-
-
-  addPartner() {  
-    
-   
-    
+  newPartner() {  
+    alert("Sucess")    
   }
 
   ngOnInit(): void {

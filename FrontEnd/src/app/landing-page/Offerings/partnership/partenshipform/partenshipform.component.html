@@ -11,7 +11,7 @@
     </div>
     <div class="container">
 
-        <form [formGroup]="addPartnerForm" (ngSubmit)='addPartner()' method="POST">
+        <form [formGroup]="validatePartnerForm" (ngSubmit)='newPartner()' method="POST">
             <!-- First row -->
             <div class="row">
                 <div class="six columns">
@@ -104,7 +104,7 @@
             <!-- submit -->
             <br><br>
             <div class="partensfor">
-            <input class="primary-btn partbut" type="submit" [disabled]="addPartnerForm.pristine || addPartnerForm.invalid"
+            <input class="primary-btn partbut" type="submit" [disabled]="validatePartnerForm.pristine || validatePartnerForm.invalid"
                 value="Submit">
             </div> 
         </form>
