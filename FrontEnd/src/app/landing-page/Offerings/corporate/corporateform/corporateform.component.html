@@ -1,29 +1,29 @@
 <head>
     <link href="/assets/css/corporate.css" rel="stylesheet">
 </head>
-
+<section class="background">
 <div class="container add1">
-    <h2>
+    <h1>
         Membership Form
-    </h2>
+    </h1>
 </div>
 <div class="container">
 
-    <form >
+    <form [formGroup]="addCorporateForm" (ngSubmit)='addCorporate()' method="POST">
         <!-- First row -->
         <div class="row">
             <div class="six columns">
                 <label>
 
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.name" name="name" placeholder="Name"
-                   value="" />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.name" name="name" placeholder="Name"
+                    formControlName="name" value="" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.address" name="address"
-                    placeholder=" Address" value=""  />
+                <input class="u-full-width " type="text" [(ngModel)]="corporate.address" name="address"
+                    placeholder=" Address" value="" formControlName="address" />
             </div>
         </div>
         <!-- Second row -->
@@ -32,14 +32,14 @@
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.website" name="website"
-                    placeholder=" Website" value=""  />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.website" name="website"
+                    placeholder=" Website" value="" formControlName="website" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.head" name="head"
-                    placeholder="Head of the organisation" value=""  />
+                <input class="u-full-width " type="text" [(ngModel)]="corporate.head" name="head"
+                    placeholder="Head of the organisation" value="" formControlName="head" />
             </div>
         </div>
         <!-- third row -->
@@ -48,14 +48,14 @@
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.nature" name="nature"
-                    placeholder="Nature of the Organization (Product/Services)" value=""  />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.nature" name="nature"
+                    placeholder="Nature of the Organization (Product/Services)" value="" formControlName="nature" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <select class="custom-select"   [(ngModel)]="corporform.typeof" >
-                    <option >Type of the Company</option>
+                <select class="custom-select" formControlName="typeof" [(ngModel)]="corporate.typeof" >
+                    <option value="">Type of the Company</option>
                     <option *ngFor="let pvt of pvts" [ngValue]="pvt">{{pvt}}</option>
                 </select>
             </div>
@@ -67,23 +67,23 @@
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.identityNo" name="identityNo"
-                    placeholder=" Corporate identity Number" value=""  />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.identityNo" name="identityNo"
+                    placeholder=" Corporate identity Number" value="" formControlName="identityNo" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.GST" name="GST" placeholder="GST Number"
-                    value=""  />
+                <input class="u-full-width " type="text" [(ngModel)]="corporate.GST" name="GST" placeholder="GST Number"
+                    value="" formControlName="GST" />
             </div>
         </div>
 
         <!-- point of contact  -->
 
         <div class="container add1">
-            <h2>
+            <h1>
                 Point of Contact
-            </h2>
+            </h1>
         </div>
 
         <!-- First row -->
@@ -92,14 +92,14 @@
                 <label>
 
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.nameofContact" name="nameofContact"
-                    placeholder="Name"  value="" />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.nameofContact" name="nameofContact"
+                    placeholder="Name" formControlName="nameofContact" value="" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.phone" name="phone"
-                    placeholder=" Contact Number" value="" />
+                <input class="u-full-width " type="text" [(ngModel)]="corporate.phone" name="phone"
+                    placeholder=" Contact Number" value="" formControlName="phone" />
             </div>
         </div>
         <!-- Second row -->
@@ -108,15 +108,15 @@
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.email" name="email" placeholder=" email"
-                    value=""  />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.email" name="email" placeholder=" email"
+                    value="" formControlName="email" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control " type="text" [(ngModel)]="corporform.TechnicalSkill" name="TechnicalSkill"
+                <input class="u-full-width " type="text" [(ngModel)]="corporate.TechnicalSkill" name="TechnicalSkill"
                     placeholder="TechnicalSkillsets commonly used in the organisation" value=""
-                    />
+                    formControlName="TechnicalSkill" />
             </div>
         </div>
 
@@ -126,13 +126,13 @@
             <div class="six columns">
                 <label>
                 </label>
-                <input class="u-full-width form-control" type="text" [(ngModel)]="corporform.employeeCount" name="employeeCount"
-                    placeholder=" employeeCount" value="" />
+                <input class="u-full-width" type="text" [(ngModel)]="corporate.employeeCount" name="employeeCount"
+                    placeholder=" employeeCount" value="" formControlName="employeeCount" />
             </div>
             <div class="six columns">
                 <label>
                 </label>
-                <select class="custom-select"  [(ngModel)]="corporform.hire">
+                <select class="custom-select" formControlName="hire" [(ngModel)]="corporate.hire">
                     <option value="">Average yearly fresher hiring in your company </option>
                     <option *ngFor="let hire of hires" [ngValue]="hire">{{hire}}</option>
                 </select>
@@ -146,7 +146,7 @@
             <div class="six columns">
                 <label>
                 </label>
-                <select [(ngModel)]="corporform.patents" >
+                <select class="custom-select" formControlName="patents" [(ngModel)]="corporate.patents" >
                     <option value="">Number of Patents per Year</option>
                     <option *ngFor="let patent of patents" [ngValue]="patent">{{patent}}</option>
                 </select>
@@ -154,8 +154,8 @@
 
             <div class="six columns">
        
-                <ng-select  bindLabel="name" placeholder="How do you wish to collaborate" appendTo="body"
-                     [(ngModel)]="corporform.collaborate" >
+                <ng-select [items]="categories" bindLabel="name" placeholder="How do you wish to collaborate" appendTo="body"
+                    [multiple]="true" [(ngModel)]="corporate.collaborate"  formControlName="collaborate">
                 </ng-select>
 
 
@@ -171,18 +171,20 @@
         <br><br>
         <label>
         </label>
-        <input class="u-full-width form-control boxer" type="text"
+        <input class="u-full-width box1" type="text"
             placeholder="Any academic interface program/ activities conducted by your organization? if so please provide the details"
-            [(ngModel)]="corporform.details" name="details" value=""  />
+            [(ngModel)]="corporate.details" name="details" value="" formControlName="details" />
 
 
 
         <!-- submit -->
         <br><br>
-        <input type="submit"class="primary-btn " style="background-color: rgb(101, 25, 241); color:white">
-
+        <div class="partensfor">
+            <input class="primary-btn partbut" type="submit"
+            value="Submit" >
+        </div>
+       
     </form>
 </div>
+</section>
 
-
-<app-footer></app-footer>

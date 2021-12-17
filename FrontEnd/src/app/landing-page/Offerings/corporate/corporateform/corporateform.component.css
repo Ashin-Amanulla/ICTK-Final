@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
+
 .background{
     background: url(/assets/images/feature-bg.png) center no-repeat;
     background-size: cover;
@@ -12,10 +13,30 @@ h2{
     text-align: center;
 }
 
+.partbut{
+    background: rgb(101, 25, 241);    
+    color:white;
+}
+.partensfor{
+    text-align: center;
+    color:white
+    }
 
 
 
-.boxer{
+
+
+.add1{
+    display: flex;
+    justify-content: center;
+}
+.add1 h1{
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin: 50px 0px 50px 0px ;
+}
+
+.box1{
     height:100px !important;
 }
 

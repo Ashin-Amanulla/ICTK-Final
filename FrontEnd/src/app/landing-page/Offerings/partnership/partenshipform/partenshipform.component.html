@@ -1,96 +1,112 @@
 <head>
-    <link href="/assets/css/corporate.css" rel="stylesheet">	
+    <link href="/assets/css/corporate.css" rel="stylesheet">
 </head>
 
 <section class="background">
 
-    <div class="container">
-        <h2>
+    <div class="container addme">
+        <h1>
             Partnership Form
-        </h2>
+        </h1>
     </div>
     <div class="container">
 
-        <form #usersignup="ngForm" (ngSubmit)="newpartner()" >
-           
+        <form [formGroup]="addPartnerForm" (ngSubmit)='addPartner()' method="POST">
+            <!-- First row -->
             <div class="row">
                 <div class="six columns">
                     <label>
 
                     </label>
-                    <input class="u-full-width form-control" type="text" name="name" placeholder="Name" #name="ngModel" [(ngModel)]="partnerform.name"  required/>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.name" name="name" placeholder="Name"
+                        formControlName="name" value="" />
 
                 </div>
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width " type="email" name="useremail" placeholder=" Email" class="form-control" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"  [(ngModel)]="partnerform.email"
-                     required pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.email" name="email"
+                        placeholder=" Email" value="" formControlName="email" />
                 </div>
             </div>
-           
+            <!-- Second row -->
             <br>
             <div class="row">
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width" type="text" class="form-control"  name="contact" placeholder=" Contact Number" #contact="ngModel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" [(ngModel)]="partnerform.contact" required />
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.phone" name="phone"
+                        placeholder=" Contact Number" value="" formControlName="phone" />
                 </div>
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width " type="text" class="form-control"  name="firm" placeholder="Name of the firm" #firm="ngModel" [(ngModel)]="partnerform.firm"  required/>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.firm" name="firm"
+                        placeholder="Published Date" value="" formControlName="firm" />
                 </div>
             </div>
-          
+            <!-- third row -->
             <br>
             <div class="row">
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width" type="text" name="address" class="form-control" placeholder="Address" [(ngModel)]="partnerform.address" required  />
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.address" name="address"
+                        placeholder="Address" value="" formControlName="address" />
                 </div>
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width " type="text"  name="district" class="form-control" placeholder="Distict" #district="ngModel" [(ngModel)]="partnerform.district" required/>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.district" name="district"
+                        placeholder="Distict" value="" formControlName="district" />
                 </div>
             </div>
 
-           
+            <!-- Fourth row -->
             <br>
             <div class="row">
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width" type="text"  name="officeSpace" class="form-control" placeholder=" Office Space in Square Feet" #space="ngModel" [(ngModel)]="partnerform.space" required/>
+                    <input class="u-full-width" type="text" [(ngModel)]="partner.officeSpace" name="officeSpace"
+                        placeholder=" Office Space in Square Feet" value="" formControlName="officeSpace" />
                 </div>
                 <div class="six columns">
                     <label>
                     </label>
-                    <input class="u-full-width " type="text" name="count" class="form-control"  placeholder="Number of Employees" #count="ngModel" [(ngModel)]="partnerform.count" required/>
+                    <input class="u-full-width " type="text" [(ngModel)]="partner.employeeCount" name="employeeCount"
+                        placeholder="Number of Employees" value="" formControlName="employeeCount" />
                 </div>
             </div>
-            
+            <!-- textbox -->
             <br>
             <label>
             </label>
-            <input class="u-full-width " type="text" name="report" class="form-control" #report="ngModel" placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?" [(ngModel)]="partnerform.report" required/>
+            <input class="u-full-width boxer" type="text"
+                placeholder="Write a brief report about the outcome/impact you have done so far with respect to the training industry?"
+                [(ngModel)]="partner.report" name="report" value="" formControlName="report" />
 
             <br><br>
             <label>
             </label>
-            <input class="u-full-width box1" type="text" name="expect" class="form-control" #expect="ngModel" placeholder="What are you expecting in partnering with ICT academy of Kerala?" [(ngModel)]="partnerform.expect" required/>
+            <input class="u-full-width boxer" type="text"
+                placeholder="What are you expecting in partnering with ICT academy of Kerala?"
+                [(ngModel)]="partner.expect" name="expect" value="" formControlName="expect" />
 
             <br><br>
             <label>
             </label>
-            <input class="u-full-width box1" type="text" name="profile"  placeholder="Brief Profile of the promoters" #profile="ngModel" [(ngModel)]="partnerform.profile" required/>
-         
+            <input class="u-full-width boxer" type="text" placeholder="Brief Profile of the promoters"
+                [(ngModel)]="partner.profile" name="profile" value="" formControlName="profile" />
+
+
+
+            <!-- submit -->
             <br><br>
             <div class="partensfor">
-            <input class="primary-btn partbut" type="submit" [disabled]="usersignup.form.invalid" value="Submit" >
-        </div>
+            <input class="primary-btn partbut" type="submit" [disabled]="addPartnerForm.pristine || addPartnerForm.invalid"
+                value="Submit">
+            </div> 
         </form>
     </div>
 </section>

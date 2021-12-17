@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-partenshipform',
@@ -7,26 +8,53 @@ import { Component, OnInit } from '@angular/core';
 ]
 })
 export class PartenshipformComponent implements OnInit {
-
-  constructor() { }
-
-  partnerform:any = {
+ 
+ 
+  partner = {
     name: '',
     email: '',
-    contact: '',
+    phone: '',
     firm: '',
     address: '',
     district: '',
-    Space: '',
+    officeSpace: '',
     report: '',
     expect: '',
     profile: '',
-    count: ''
+    employeeCount: ''
   }
-newpartner(){
-  alert("partner reg sucess")
-}
 
+
+
+
+  constructor(private fb: FormBuilder  ) { }
+
+  addPartnerForm = this.fb.group(
+    {
+      name: ['', Validators.required],
+      email: ['', Validators.required],
+      phone: ['', Validators.required],
+      firm: ['', Validators.required],
+      address: ['', Validators.required],
+      district: ['', Validators.required],
+      officeSpace: ['', Validators.required],
+      report: ['', Validators.required],
+      expect: ['', Validators.required],
+      profile: ['', Validators.required],
+      employeeCount: ['', Validators.required]
+
+    }
+  )
+
+  
+
+
+
+  addPartner() {  
+    
+   
+    
+  }
 
   ngOnInit(): void {
   }

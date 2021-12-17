@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-corporateform',
@@ -8,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class CorporateformComponent implements OnInit {
 
   
-
   categories = [
     'Providing experts for skill sessions',
      'Fresher hiring',
@@ -25,9 +25,9 @@ export class CorporateformComponent implements OnInit {
   patents = ['1-10', "10>",'NA']
 
 
-  ngOnInit(): void {
-  }
-  corporform:any =  {
+
+
+  corporate = {
 
     name: '',
     address: '',
@@ -49,10 +49,52 @@ export class CorporateformComponent implements OnInit {
     details: ''
 
   }
-  constructor() { }
 
-  newcorporate(){
 
+
+  constructor(private fb: FormBuilder ) { }
+
+  addCorporateForm = this.fb.group(
+    {
+
+      name: ['', Validators.required],
+      address: ['', Validators.required],
+      website: ['', Validators.required],
+      head: ['', Validators.required],
+      nature: ['', Validators.required],
+      typeof: ['', Validators.required],
+      identityNo: ['', Validators.required],
+      GST: ['', Validators.required],
+      date: ['', Validators.required],
+      nameofContact: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['',  Validators.compose([
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+      ])],
+      TechnicalSkill: ['', Validators.required],
+      employeeCount: ['', Validators.required],
+      hire: ['', Validators.required],
+      patents: [Validators.required],
+      collaborate: [ Validators.required],
+      details: ['', Validators.required]
+
+    }
+  )
+
+
+
+
+  addCorporate() {
+
+
+   
+  }
+
+
+
+  ngOnInit() {
+    
   }
 
 }
