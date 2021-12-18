@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-single-page',
   templateUrl: './single-page.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SinglePageComponent implements OnInit {
 
+  // img = {
+  //   image: '/assets/images/partner2.png',
+  //   hfh:''
+  //  }
   constructor() { }
 
   ngOnInit(): void {
+    // AOS.init();
   }
 
 }

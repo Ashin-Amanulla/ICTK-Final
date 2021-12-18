@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* line 1, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+.searchbtn{
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  margin-top: 5px;
+}
+.course-found{
+  margin-top: -60px;
+  margin-left: 9rem;
+  font-size: 1.2rem;
+  color: #647B9C;
+  font-weight: 400;
+ 
+}
+.course-found span{
+  font-weight: 700;
+
+}
+.breadcrumb_bg {
+    background-image: url('src/assets/images/bg-8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+.breadcrmbclr{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}  
+.breadcrmbclr:hover{
+  color: rgb(0, 122, 221);
+}
+
+
+  /* line 5, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* line 10, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    content: "";
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+  /* line 22, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb .breadcrumb_iner {
+    height: 250px;
+    width: 100%;
+    display: table;
+  }
+  
+  /* line 27, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  /* line 31, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  @media (max-width: 576px) {
+    /* line 31, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+    .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 31, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+    .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 31, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+    .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+      font-size: 40px;
+    }
+  }
+  
+  /* line 53, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item p {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  /* line 58, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item span {
+    margin: 0px 5px;
+    font-size: 12px;
+  }
+  
+  /* line 68, E:/172 Etrain Education/172_Etrain_Education_html/sass/_breadcrumb.scss */
+  .breadcrumb {
+    margin-bottom: 0px !important;
+  }
+.c-details{
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+  left: 1px;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 18px;
+}
+.c-details:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 254, 254);
+  box-shadow: 2px 2px 10px #000;
+}
+
+
+  
+/* search */
+
+.search-hero {
+
+  max-width: 500px;
+  margin:auto;
+  position: relative;
+   top: 35px;
+ 
+}
+
+.form-control {
+  box-shadow: 0 10px 30px 0 #B0C1D9;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left:40px;
+}
+.form-control:hover{
+  box-shadow: 0 10px 30px 0 #9eebbb;
+
+
+}
+/* btn  */
+ .button-default1 {
+  padding: 8px 33px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: rgb(230, 6, 6);
+  font-weight:600;
+  content: 'closed';
+  
+}
+ /* .button-default1 {background: #e25401 none repeat scroll 0 0;} */
+/*  */
+@media only screen and (max-width: 576px){
+  .search-hero {
+
+    max-width: 320px;
+    margin:auto;
+    position: relative;
+     top: 35px;
+   
+  }
+  .course-found{
+    margin-top: -60px;
+    margin-left:3.8rem;
+    font-size: 1.2rem;
+   
+  }
+}
