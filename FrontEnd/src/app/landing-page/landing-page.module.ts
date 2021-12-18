@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LandingPageRoutingModule } from './landing-page-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -14,6 +13,7 @@ import { PartnershipComponent } from './Offerings/partnership/partnership.compon
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
+import { CourseRegistrationComponent } from './Courses/course-registration/course-registration.component';
 
 
 @NgModule({
@@ -30,6 +30,7 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
     HomeMainComponent,
     ContactComponent,
     AboutMainComponent,
+    CourseRegistrationComponent,
   ],
   imports: [
     CommonModule,

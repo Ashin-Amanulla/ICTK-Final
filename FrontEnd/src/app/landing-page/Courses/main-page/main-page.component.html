@@ -1,2 +1,176 @@
-<p>main-page works!</p>
-<h1>test commit</h1>
+
+
+<!-- breadcrumb start-->
+ <section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb_iner text-center">
+                    <div class="breadcrumb_iner_item">
+                        <h2>Our Courses</h2>
+                        <p><a routerLink="/" class="breadcrmbclr"> Home</a><span>/</span>Courses</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb start-->
+
+<!-- searchbar -->
+<div class="search-hero">
+    <div class="searchbtn">🔍</div>
+    <input class="form-control" type="text" name="search" autocomplete="on" placeholder="Search course......">
+  </div>
+<!-- searchbar end -->
+
+<!-- <div class="col-lg-4 col-md-6 col-12 ">
+ <p>We found 142 courses for you</p>
+</div> -->
+
+
+<!--course card -->
+
+                <!--Course Area Start-->
+                <div class="course-area section-padding course-page">
+                    <p class="mb-5 course-found">We found <span>10</span>  courses for you</p>
+                  <div class="container">
+                      <div class="row" >
+                        
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            
+                              <div class="single-item" >
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="../../assets/images/bg-8.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">CERTIFIED SPECIALIST IN FULL STACK DEVELOPMENT</a></h4>
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>M S Nawaz</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                      <p>The MERN stack is an excellent choice for web developers who wish to develop high-quality web applications using JavaScript. The core technologies define the MERN stack - MongoDB, Express.js, React, and Node.js ,all are based on one language, Javascript.  <span><a href=""> read more</a></span> </p>
+                                        <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                                  </div>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default" [ngClass]="regPriority== 1? 'button-default':'button-default1'">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12">
+                              <div class="single-item">
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="/assets/images/course/2.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">CERTIFIED SPECIALIST IN DATA SCIENCE & ANALYTICS</a></h4>
+                                      
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>Subas Das</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                      
+                                      <p>Data Science and Analytics are amongst the Top 5 IT Jobs . One of the worlds famous tech group, CIO.com predicts that the skills around Data Science will remain as popular for the next few years.  </p>
+                                      <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                                  </div>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12">
+                              <div class="single-item">
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="../../../../assets/images/course/3.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">ROBOTIC PROCESS AUTOMATION</a></h4>
+                                    
+                                     
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>Momin Boss</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                                                
+                                     <p>Robotic process automation (RPA) is the use of software with artificial intelligence (AI) and machine learning capabilities to handle high-volume, repeatable tasks that previously required humans to perform. </p>
+                                     <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                    
+                                  </div>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12">
+                              <div class="single-item">
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="../../../../assets/images/course/4.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">CERTIFIED CYBER SECURITY ANALYST</a></h4>
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>M S Nawaz</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                      <p>Cyber Security is a specialized field in Information Technology (IT) which is regarded as a sub-stream in Computer  Science. Cyber Security as a  profession is evolving over the years, the reason being the increasing rate of cybercrime. </p>
+                                      <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                                  </div>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12">
+                              <div class="single-item">
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="../../../../assets/images/course/5.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">DIGITAL MARKETING</a></h4>
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>Subas Das</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                    
+                                      
+                                      <p>Digital marketing encompasses all  marketing efforts that use an electronic device or the internet .Businesses leverage digital channels such as search engines, and their websites to connect with prospective customers. </p>
+                                  
+                                <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                                  </div>
+                                  <br>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12">
+                              <div class="single-item">
+                                  <div class="single-item-image overlay-effect">
+                                      <a routerLink="/LandingPage/single-course"><img src="../../../../assets/images/course/6.jpg" alt=""></a>
+                                  </div>
+                                  <div class="single-item-text">
+                                      <h4><a routerLink="/LandingPage/single-course">CERTIFIED SPECIALIST IN SOFTWARE DEVELOPMENT</a></h4>
+                                      <div class="single-item-text-info">
+                                          <!-- <span>By: <span>Momin Boss</span></span> -->
+                                          <span>Date: <span>20.5.15</span></span>
+                                      </div>
+                                      <p>Software testing is the process of evaluating and verifying that a software product or application does what it is supposed to do. The benefits of testing include preventing bugs, reducing development costs and improving performance. </p>
+                                     <span><a routerLink="/LandingPage/single-course"  class="c-details btn ">Course details</a></span>
+                                  </div>
+                                  <div class="button-bottom">
+                                      <a routerLink="/LandingPage/registration" class="button-default">Register Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--End of Course Area-->
+
+
+
+<!--course card end -->
+
+
+
