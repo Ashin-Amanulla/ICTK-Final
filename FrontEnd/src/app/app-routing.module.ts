@@ -11,8 +11,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'LandingPage',
     pathMatch: 'full'
-  }
-
+  },
 ];
 
 @NgModule({
