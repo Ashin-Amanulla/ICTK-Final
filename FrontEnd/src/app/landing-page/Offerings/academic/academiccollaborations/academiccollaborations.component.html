@@ -1,0 +1,44 @@
+<head>
+    <link href="/assets/css/corporate.css" rel="stylesheet">
+</head>
+
+
+<div class="col-lg-12" class="academiccolab">
+  <h2>Premium Membership Form</h2>
+  <p class="newpar">Existing Premium Member colleges are requested to submit the membership renewal request. Click the Existing Member Renewal Form and submit needed details.
+    <br>New institutions are requested to submit the New membership Application form.
+  </p>
+    <div class="card-badge newpos" *ngIf='(regstatus==true)'><a class="primary-btn" routerLink="/LandingPage/academiccollaboarations">Registration Open</a>
+    </div>
+    <div class="card-badge newpos" *ngIf='(regstatus==false)'> <a class="primary-btn" routerLink="/LandingPage/academiccollaboarations">Registration Closed</a> 
+    </div>
+</div>
+   
+<div class='card-body'>  
+ <h2 class="tabheading">ICTAK Premium Member Colleges (2021 - 2022)</h2>           
+    <div class='table-responsive' style="margin-left:3%;margin-right:3%;">
+      <table class='table bg-pic' 
+            *ngIf = 'members && members.length'>
+        <thead class="tablehead">
+          <tr>
+                <th class="left">S. No</th>
+            <th class="left">Membership ID</th>
+            <th class="left">Name of the Institution</th>
+            <th class="left">Website address</th>          
+          </tr>
+         
+        </thead>
+        <tbody>  
+            <tr *ngFor='let member of members'>
+                 
+                <td class="left">{{ member.slno }}</td>
+                <td class="left">{{ member.membid }}</td>
+                <td class="left">{{ member.name }}</td>
+                <td class="left">{{ member.webaddress }}</td>               
+            </tr>
+               
+                          
+        </tbody>
+      </table>
+    </div>
+  </div>

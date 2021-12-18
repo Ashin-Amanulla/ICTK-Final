@@ -14,6 +14,12 @@ import { PartnershipComponent } from './Offerings/partnership/partnership.compon
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
+import { PartenshipformComponent } from './Offerings/partnership/partenshipform/partenshipform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CorporateformComponent } from './Offerings/corporate/corporateform/corporateform.component';
+import { AcademiccollaborationsComponent } from './Offerings/academic/academiccollaborations/academiccollaborations.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 @NgModule({
@@ -30,10 +36,17 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
     HomeMainComponent,
     ContactComponent,
     AboutMainComponent,
+    PartenshipformComponent,
+    CorporateformComponent,
+    AcademiccollaborationsComponent,
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    FormsModule,
+    NgSelectModule,
+    ReactiveFormsModule,
+    NgMultiSelectDropDownModule.forRoot()
   ]
 })
 export class LandingPageModule { }
