@@ -1,0 +1,70 @@
+
+    <!-- Start featured section -->
+    <!-- <section class="featured-section">
+        <div class="container">
+            <div class="section-title">
+                 <h2 class="text-center">KNOWLEDGE PARTNERS</h2> -->
+                <!-- <div class="h1 text-center text-dark" id="pageHeaderTitle">KNOWLEDGE PARTNERS</div>
+            </div>
+            <div class="row align-item-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+                    <img class="img-fluid" src="./assets/img/logo/logo11.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+                    <img class="img-fluid" src="img/logo/logo2.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+                    <img class="img-fluid" src="img/logo/logo3.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+                    <img class="img-fluid" src="img/logo/logo4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End featured section -->
+
+    <div class="container mt-5">
+    <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+    <header>
+        <!-- <h1>OUR TEAM</h1> -->
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">KNOWLEDGE PARTNERS</div>
+      </header>
+    
+        <section class="featured-section">
+        <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="slideConfig" 
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <mat-card class="example-card" ngxSlickItem *ngFor="let slide of slides" class="slide">
+    
+                
+    <!----------------------
+       Our profile cards
+    ------------------------>
+    
+      
+    <div class="row align-item-center">
+        <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+            <img class="img-fluid" src="./assets/img/logo/logo11.png" alt="">
+        </div>
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+            <img class="img-fluid" src="img/logo/logo2.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+            <img class="img-fluid" src="img/logo/logo3.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 single-logo">
+            <img class="img-fluid" src="img/logo/logo4.png" alt="">
+        </div> -->
+    </div>
+    
+      
+        </mat-card>
+        </ngx-slick-carousel>
+      </section>
+    </div>
+</div>

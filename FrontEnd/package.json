@@ -18,13 +18,16 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "jquery": "^3.6.0",
+    "ngx-slick-carousel": "^0.5.1",
     "rxjs": "~7.4.0",
+    "slick-carousel": "^1.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.3",
-    "@angular/cli": "~13.0.3",
+    "@angular/cli": "^13.0.2",
     "@angular/compiler-cli": "~13.0.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",

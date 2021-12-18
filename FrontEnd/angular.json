@@ -30,9 +30,31 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/themify-icons.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/jquery-2.2.4.min.js",
+              "src/assets/js/vendor/popper.min.js",
+              "src/assets/js/jquery.easing.1.3.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/jquery.parallax-scroll.js",
+              "src/assets/js/dopeNav.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/jquery.stellar.min.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/js/main.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,9 +119,31 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/themify-icons.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+    "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/jquery-2.2.4.min.js",
+              "src/assets/js/vendor/popper.min.js",
+              "src/assets/js/jquery.easing.1.3.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/jquery.parallax-scroll.js",
+              "src/assets/js/dopeNav.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/jquery.stellar.min.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/js/main.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           }
         }
       }
