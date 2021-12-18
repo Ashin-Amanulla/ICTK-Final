@@ -12,8 +12,12 @@ import { AcademicComponent } from './Offerings/academic/academic.component';
 import { CorporateComponent } from './Offerings/corporate/corporate.component';
 import { PartnershipComponent } from './Offerings/partnership/partnership.component';
 import { HomeMainComponent } from './Home/home-main/home-main.component';
-import { ContactComponent } from './Home/contact/contact.component';
-import { AboutMainComponent } from './About/about-main/about-main.component';
+
+import { BannerHomeComponent } from './Home/banner-home/banner-home.component';
+import { VideoComponent } from './Home/video/video.component';
+import { CardsComponent } from './Home/cards/cards.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TesterComponent } from './Home/tester/tester.component';
 
 
 @NgModule({
@@ -28,12 +32,20 @@ import { AboutMainComponent } from './About/about-main/about-main.component';
     CorporateComponent,
     PartnershipComponent,
     HomeMainComponent,
-    ContactComponent,
-    AboutMainComponent,
+
+    BannerHomeComponent,
+    VideoComponent,
+    CardsComponent,
+    TesterComponent
+    
+
+   
+
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    SlickCarouselModule
   ]
 })
 export class LandingPageModule { }
