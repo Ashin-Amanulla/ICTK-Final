@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\Downloads\\material-kit-2-3.0.0"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\Downloads\\responsive-blog-card-slider"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "material-kit-2-3.0.0",
+		"liveServer.settings.port": 5501
+	}
+}

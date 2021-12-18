@@ -65,6 +65,17 @@
 *::after {
   box-sizing: border-box;
 }
+.showcase video
+{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -80,7 +91,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #182962;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -7317,7 +7328,7 @@ fieldset:disabled .btn {
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
+  margin-right: ;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
