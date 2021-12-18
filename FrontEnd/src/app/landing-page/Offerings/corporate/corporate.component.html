@@ -1,6 +1,7 @@
 
 <head>	
     <link href="/assets/css/corporate.css" rel="stylesheet">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 		<div class="row text-center" >
 			<div class="container">
 				<div class="section-title margin-b30">
-					<h3> Why Choose Us ?</h3>
+					<h2 style="font-weight:bold;"> Why Choose Us ?</h2>
                 </div>
 			</div>
 		</div>
@@ -86,9 +87,9 @@
 <div class="col-lg-12">    
     <section class="stat-section section-gap-half">
         <div>
-            <h3 style="text-align: center;color:white;padding-bottom: 10%;">
+            <h2 style="font-weight:bold; text-align: center;color:white;padding-bottom: 10%;">
                 Number of candidates trained on various skills in FY 20-21                
-            </h3>
+            </h2>
         </div>
         <div class="container">
             <div class="row">
@@ -142,42 +143,27 @@
      </section>
 
 
-	<!--APPS Downloads -->
-	<section class="container-fluid partnerdemo section_sapce section-parallax parallax  apps-download" >
+	
+	<section class="container-fluid partnerdemo " >
         <div class="container ">
             <div class="row">
                 <div style="text-align: center;">
-                	<h3 style="padding-bottom: 5%;"> Meet our Technology Partners </h3>
+                	<h2 class="headblack" style="font-weight:bold; padding-bottom: 5%; padding-top: 5%;"> Meet our Technology Partners </h2>
                 </div>
-                <div class="text-center relative">
-                	
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png"  class="col-lg-2 col-md-3 col-sm-4 col-4" style="margin-top:2%">
-					
-                    <img src="https://thycotic.com/wp-content/uploads/2020/09/automation_anywhere.png"  class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:2%">
-					<img src="https://www.freepnglogos.com/uploads/microsoft-logo-png-transparent-20.png"  class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:2%">
-                <img src="https://images.ctfassets.net/5965pury2lcm/1OVj4PfkzVc4Vrm3IuDdAP/f415d995e5a286ddb2644cabafeb9578/UiPath-og-image-orange.png" class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:2%">
-				<img src="https://www.freepnglogos.com/uploads/vmware-png-logo/partners-login-vmware-png-logo-10.png"  class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:5%">
-			<img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png"  class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:5%">	
-            <img src="https://download.logo.wine/logo/Oracle_Corporation/Oracle_Corporation-Logo.wine.png"  class="col-lg-2 col-md-3 col-sm-5 col-4" style="margin-top:0%">	  	
+                         <div class="row text-center relative" style="padding-bottom: 5%; padding-top: 5%;">
+                   <div class="col col-lg col-sm col-md" >
+                <div  *ngFor="let partner of partners" >
+                    <img class="col-lg-2 col-md-4 col-sm-4 col-5 text-center"  style="margin-top:3%" src={{partner}}>
+                   </div>
+                    
+                </div>
+            </div>
 
-			</div>
             </div>
         </div>
 	</section>
-    <!--End of APPS Downloads -->
-
-
-    <!--  Footer -->
-	
-    <!--  End of Footer -->
-
-
-    <!--  Back to Top -->
+    
    
-
-    <!--  Scripts -->
-	
-
 	
 </body>
 

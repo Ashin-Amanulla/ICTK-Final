@@ -4,6 +4,8 @@
 .background{
     background: url(/assets/images/feature-bg.png) center no-repeat;
     background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 h2{
@@ -19,7 +21,12 @@ h2{
     text-align: center;
     color:white
     }
-
+    .padnew{
+      padding-left: 5%;
+  }
+ .padright{
+     padding-right: 5%;
+ }
 
     .addme {
         display: flex;

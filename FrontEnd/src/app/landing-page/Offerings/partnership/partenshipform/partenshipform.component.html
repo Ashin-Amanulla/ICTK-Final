@@ -14,7 +14,7 @@
         <form [formGroup]="validatePartnerForm" (ngSubmit)='newPartner()' method="POST">
             <!-- First row -->
             <div class="row">
-                <div class="six columns">
+                <div class="six columns padright">
                     <label>
 
                     </label>
@@ -22,7 +22,7 @@
                         formControlName="name" value="" />
 
                 </div>
-                <div class="six columns">
+                <div class="six columns padnew">
                     <label>
                     </label>
                     <input class="u-full-width " type="text" [(ngModel)]="partner.email" name="email"
@@ -32,13 +32,13 @@
             <!-- Second row -->
             <br>
             <div class="row">
-                <div class="six columns">
+                <div class="six columns padright">
                     <label>
                     </label>
                     <input class="u-full-width" type="text" [(ngModel)]="partner.phone" name="phone"
                         placeholder=" Contact Number" value="" formControlName="phone" />
                 </div>
-                <div class="six columns">
+                <div class="six columns padnew">
                     <label>
                     </label>
                     <input class="u-full-width " type="text" [(ngModel)]="partner.firm" name="firm"
@@ -48,13 +48,13 @@
             <!-- third row -->
             <br>
             <div class="row">
-                <div class="six columns">
+                <div class="six columns padright">
                     <label>
                     </label>
                     <input class="u-full-width" type="text" [(ngModel)]="partner.address" name="address"
                         placeholder="Address" value="" formControlName="address" />
                 </div>
-                <div class="six columns">
+                <div class="six columns padnew">
                     <label>
                     </label>
                     <input class="u-full-width " type="text" [(ngModel)]="partner.district" name="district"
@@ -65,13 +65,13 @@
             <!-- Fourth row -->
             <br>
             <div class="row">
-                <div class="six columns">
+                <div class="six columns padright">
                     <label>
                     </label>
                     <input class="u-full-width" type="text" [(ngModel)]="partner.officeSpace" name="officeSpace"
                         placeholder=" Office Space in Square Feet" value="" formControlName="officeSpace" />
                 </div>
-                <div class="six columns">
+                <div class="six columns padnew">
                     <label>
                     </label>
                     <input class="u-full-width " type="text" [(ngModel)]="partner.employeeCount" name="employeeCount"
