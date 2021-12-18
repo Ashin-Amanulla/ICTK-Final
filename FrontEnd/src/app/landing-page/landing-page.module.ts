@@ -12,6 +12,7 @@ import { CorporateComponent } from './Offerings/corporate/corporate.component';
 import { PartnershipComponent } from './Offerings/partnership/partnership.component';
 import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { AboutMainComponent } from './About/about-main/about-main.component';
 
 
 
@@ -26,6 +27,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     CorporateComponent,
     PartnershipComponent,
     HomeMainComponent
+    AboutMainComponent,
   ],
   imports: [
     CommonModule,
