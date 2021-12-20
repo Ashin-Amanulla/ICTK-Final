@@ -1,0 +1,43 @@
+
+ <div class="container mt-5">
+<div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+<header>
+	<!-- <h1>OUR TEAM</h1> -->
+	<div class="h1 text-center text-dark" id="pageHeaderTitle">OUR TEAM</div>
+  </header>
+ 
+  <section>
+	<ngx-slick-carousel class="carousel" 
+	#slickModal="slick-carousel" 
+	[config]="slideConfig" 
+	(init)="slickInit($event)"
+	(breakpoint)="breakpoint($event)"
+	(afterChange)="afterChange($event)"
+	(beforeChange)="beforeChange($event)">
+	<mat-card class="example-card" ngxSlickItem *ngFor="let slide of slides" class="slide">
+
+    		
+<!----------------------
+   Our profile cards
+------------------------>
+
+  
+	<div class="card card-one">
+	  <header>
+		<div class="avatar">
+		  <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
+		</div>
+	  </header>
+  
+	  <h3>Jhon Doe</h3>
+	  <div class="desc">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
+	  </div>
+	</div>
+
+  
+	</mat-card>
+	</ngx-slick-carousel>
+  </section>
+</div>
+</div>
