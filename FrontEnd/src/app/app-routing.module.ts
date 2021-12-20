@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions,RouterModule, Routes } from '@angular/router';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SiteUnderConstructionComponent } from './site-under-construction/site-under-construction.component';
 
 const routes: Routes = [
 
@@ -8,15 +10,19 @@ const routes: Routes = [
     loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule)
   },
   {
-    path: '',
-    redirectTo: 'LandingPage',
-    pathMatch: 'full'
-  }
+    path: '', redirectTo: 'LandingPage', pathMatch: 'full'
+  },
+  {
+    path: '**', component: SiteUnderConstructionComponent
+  },
+
 
 ];
 
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
+  imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
   })],
   exports: [RouterModule]

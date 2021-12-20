@@ -19,7 +19,6 @@ import { VideoComponent } from './Home/video/video.component';
 import { CardsComponent } from './Home/cards/cards.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TesterComponent } from './Home/tester/tester.component';
-import { Footer1Component } from './Home/footer/footer.component';
 
 
 //Jeslin
@@ -35,6 +34,7 @@ import { MarketingPartnersComponent } from './About/marketing-partners/marketing
 import { TrainersComponent } from './About/trainers/trainers.component';
 import { KnowledgePartnersComponent } from './About/knowledge-partners/knowledge-partners.component';
 import { VendorsComponent } from './vendors/vendors.component';
+import { LandingPageComponent } from './landing-page.component';
 
 @NgModule({
   declarations: [
@@ -48,12 +48,12 @@ import { VendorsComponent } from './vendors/vendors.component';
     PartnershipComponent,
     HomeMainComponent,
     AboutMainComponent,
+    LandingPageComponent,
     //Sandeep
     BannerHomeComponent,
     VideoComponent,
     CardsComponent,
     TesterComponent,
-    Footer1Component,
     
 
    //Jeslin
