@@ -1,8 +1,4 @@
-.gradient-bg  {
-    background: -moz-linear-gradient(0deg, #df37a7 0%, #691cff 100%);
-    background: -webkit-linear-gradient(0deg, #f51dac 0%, #691cff 100%);
-    background: -ms-linear-gradient(0deg, #f51dac 0%, #691cff 100%);
-  }
+
 .page-top-banner{
     background: linear-gradient(rgba(87, 174, 233, 0.4),rgba(153, 65, 235,0.2)), url("/assets/img/mlai.jpeg");
     background-size: cover;
@@ -37,30 +33,17 @@
         }
     }
 }
-
-
-
 .zoom-in-zoom-out{
   margin-top:-20px;
   margin: 5px;
-  width: 450px;
+  width: 500px;
   height: 500px;
   background: url("/assets/img/reg-ill2.png");
   background-size: cover;
-//   animation: zoom-in-zoom-out 2s ease-out infinite;
 }
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
+
+
 
 
 .featured-section {
@@ -144,38 +127,29 @@
   padding: .5rem 1.5rem;
 }
 }
-@media screen and (min-device-width: 400px) and (max-device-width: 768px) {
-  .button-1 {
-    padding: .5rem 1.5rem;
-  }
-  .btn{
-    position: relative;
-    left:120px;
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+  .page-top-banner{
+    width:160%;
   }
   .page-top-banner h1{
     font-size: 40px;
+    font-weight: bold;
   }
-  #about-section ul{
-    margin-left: -50px;
-  }
-}
-@media only screen and (max-device-width: 400px){
   .button-1 {
     padding: .5rem 1.5rem;
+    font-size: 20px;
   }
   .btn{
     position: relative;
-    left:120px;
+    left:28%;
   }
-  .page-top-banner {
-    width:120%;
+.single-price, .faq-section,  .featured-section, #about-section{
+    width:160%;
   }
-  .page-top-banner h1{
-    font-size: 40px;
+  .img-explain{
+    width:115%;
   }
   #about-section ul{
-    margin-left: -50px;
+    margin-left: -40px;
   }
 }
-
-

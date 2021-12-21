@@ -1,6 +1,6 @@
 
   .cater3-movingBG {
-      height: 100vh;
+      height: 80vh;
       background-image: url(/assets/img/digi-bg.jpg);
       background-size: 125%;
       background-repeat: repeat-x;
@@ -43,39 +43,29 @@
     transition-delay:.4s; 
     transition:.6s ease in;
     animation: txtFlyIn .5s linear;
+    color:white;
+    font-size: 35px;
+    margin-bottom:20px;
+     margin-top: 5%;
   }
    .lineTwo {
       transition-delay:.8s; 
       transition:.8s ease in;
       animation: txtFlyIn .8s linear;
+      color:white;
+      font-size: 50px;
+      margin-bottom:8px;
   }
-  /* .lineThree {
-      transition-delay:.6s; 
-      transition:.8s ease in;
-      animation: txtFlyIn .9s linear;
-  }
-  .lineOne {
-      font-size:28px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin-top:-20%;
-    } */ 
+  
   .lineTwo {
       transition-delay:4s; 
       transition:6s ease in;
       animation: fadeIn 6s linear;
       text-align: center;
       width: 100%;
-      /* background-color:rgba(255,255,255,0.9); */
       display:inline-block;
       color: white;
       box-size:border-box;
-      /* max-width:60%;
-      max-width: 18em; */
-      /* font-size: 32px;
-      padding: .2em .5em;
-      margin-top: 30px;
-      margin-left: 150px; */
   }
   @keyframes fadeIn{
       0% { opacity:0;}
@@ -85,17 +75,41 @@
       0% { transform:translateX(-100%); }
       100% { transform:translateX(0%); }
   }
+  .btn{
+    width:200px;
+     font-size: 24px;
+     font-weight: 400;
+      border-radius:50px;
+       margin-top:3%;
+       color:#fff;
+       background: darkorange;
+  }
 
 
   .feature-section {
     background: url(/assets/img/feature-bg.png)center no-repeat;
     background-size: cover;
   }
+  .feature-section h1{
+      font-size:30px ;
+      font-weight: bold;
+  }
+  .faq-section h2{
+    font-size: 30px; 
+    font-weight: bold;  
+  }
 
-
+#about-section h1{
+    font-size: 30px;
+    font-weight: bold
+}
   /* testimonial */
   #testimonial-section{
       background: #eee;
+  }
+  #testimonial-section h1{
+    font-size:35px; 
+    font-weight:bold;
   }
   .testimony-img{
     width: 110px;
@@ -134,24 +148,7 @@
     margin: 28px 30% 70px 30%;
     line-height: 23px;
 }
-.testimony-content p::before{
-    content: '\f10d';
-    font-family: FontAwesome;
-    position: absolute;
-    left: -10%;
-    top: -45%;
-    font-size: 42px;
-    color:rgb(92, 91, 91);
-}
-.testimony-content p::after{
-    content: '\f10e';
-    font-family: FontAwesome;
-    position: absolute;
-    right: -15%;
-    bottom: 0;
-    font-size: 42px;
-    color:rgb(92, 91, 91);
-}
+
 .testimony-head,.services-head{
     
     text-align: center;
@@ -159,4 +156,77 @@
     font-size: 30px;
     font-style: italic;
     font-weight: 600;
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    .lineTwo{
+        font-weight: bold;
+    }
+    #testimonial-section .owl-prev i{
+        left:-100px;
+      }
+      #testimonial-section .owl-next{
+        right:500px;
+      }
+}
+@media only screen and (min-device-width:425px) and (max-device-width:767px){
+    .lineOne{
+        font-size: 28px;
+        
+    }
+    .lineTwo{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .btn{
+        font-size: 20px;
+        font-weight: 400;
+        width: 150px;
+        color:#fff;
+    }
+}
+@media only screen and (min-device-width:321px) and (max-device-width:424px){
+    .cater3-movingBG{
+        height: 70vh;
+    }
+    .lineOne{
+        font-size: 25px;
+        
+    }
+    .lineTwo{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .btn{
+        font-size: 20px;
+        font-weight: 400;
+        width: 150px;
+        color:#fff;
+    }
+}
+@media only screen and (max-device-width:320px){
+    .cater3-movingBG{
+        height: 50vh;
+    }
+    .lineOne{
+        font-size: 20px;
+        
+    }
+    .lineTwo{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .btn{
+        font-size: 18px;
+        font-weight: 300;
+        width: 120px;
+        color:#fff;
+    } 
+    #price-section h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #feature-section h1, .faq-section h2, #about-section h1, .explore-section h1, #testimonial-section h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
 }

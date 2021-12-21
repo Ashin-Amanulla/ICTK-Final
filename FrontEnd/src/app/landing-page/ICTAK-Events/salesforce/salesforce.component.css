@@ -1,3 +1,26 @@
 #about-section1{
     background: #eee;
 }
+#about-section1 h1{
+    font-size: 40px;
+     font-weight: 500; 
+     margin-bottom:30px;
+      margin-top: -20px;
+}
+#about-section h1{
+    font-size: 30px; 
+    font-weight: 500;
+}
+#feature-section h1{
+    font-size: 40px; 
+    font-weight: 500;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px){
+    #about-section1 h1, #about-section h1, #feature-section h1{
+        font-size: 24px;
+    }
+    #about-section1 ul {
+        margin-left: -70px;
+    }
+}

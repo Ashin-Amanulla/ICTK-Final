@@ -21,6 +21,7 @@ import { RpaComponent } from './ICTAK-Events/rpa/rpa.component';
 import { MlAiComponent } from './ICTAK-Events/ml-ai/ml-ai.component';
 import { SalesforceComponent } from './ICTAK-Events/salesforce/salesforce.component';
 import { DcwFormComponent } from './ICTAK-Events/dcw-form/dcw-form.component';
+import { EventsCarouselComponent } from './ICTAK-Events/events-carousel/events-carousel.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -57,6 +58,7 @@ import { SalesforceFormComponent } from './ICTAK-Events/salesforce-form/salesfor
     RpaFormComponent,
     MlaiFormComponent,
     SalesforceFormComponent,
+    EventsCarouselComponent
   ],
   imports: [
     CommonModule,
