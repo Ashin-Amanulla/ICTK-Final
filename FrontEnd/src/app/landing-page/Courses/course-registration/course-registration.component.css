@@ -22,7 +22,7 @@
     color: black;
 }
 .main-bg{
-    background-image: url(../../../../assets/images/courseregBG.jpg);
+    background-image: url(/assets/images/courseregBG.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@
       right: 25rem;
       bottom: 18rem;
       font-size: 60px;
-      color: rgba(250, 165, 8, 0.952); 
+      color: rgb(105 56 255 / 95%); 
       
   }
   .fas:hover{

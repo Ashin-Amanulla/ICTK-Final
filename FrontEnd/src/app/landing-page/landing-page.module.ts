@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// import { BrowserModule } from '@angular/platform-browser';
 import { LandingPageRoutingModule } from './landing-page-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -14,7 +15,9 @@ import { HomeMainComponent } from './Home/home-main/home-main.component';
 import { ContactComponent } from './Home/contact/contact.component';
 import { AboutMainComponent } from './About/about-main/about-main.component';
 import { CourseRegistrationComponent } from './Courses/course-registration/course-registration.component';
-
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { IvyCarouselModule } from "angular-responsive-carousel";
 
 @NgModule({
   declarations: [
@@ -33,8 +36,12 @@ import { CourseRegistrationComponent } from './Courses/course-registration/cours
     CourseRegistrationComponent,
   ],
   imports: [
+    // BrowserModule,
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    // BrowserAnimationsModule,
+    CarouselModule,
+    IvyCarouselModule
   ]
 })
 export class LandingPageModule { }

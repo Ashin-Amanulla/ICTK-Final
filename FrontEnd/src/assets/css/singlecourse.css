@@ -4090,20 +4090,15 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 /*== School Category Top Courses ==*/
 .top_courses {
-  background-color: #ffffff;
-  border: 2px solid #eeeeee;
-  border-radius: 5px;
+  
   margin-bottom: 30px;
-  overflow: hidden;
   position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.top_courses.home2 {  
-  border:none;
-}
+
 .top_courses.home2 .details .tc_content h5{
   height: 46px;
 }
@@ -4114,15 +4109,6 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   display: -o-flex;
   display: flex;
   position: relative;
-}
-.top_courses .thumb:before{
-  background-color: rgba(0,0,0, .3);
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .top_courses .thumb .overlay{
   bottom: 0;
@@ -4144,13 +4130,6 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   text-align: center;
   width: 90px;
 }
-.top_courses .thumb .overlay .icon{
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
 .top_courses .thumb .overlay .tag,
 .top_courses .thumb .overlay a.tc_preview_course{
   -webkit-transform:scale(0);
@@ -4163,31 +4142,9 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.top_courses:hover{
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(32, 32, 32, 0.15);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(32, 32, 32, 0.15);
-  -o-box-shadow: 0px 0px 30px 0px rgba(32, 32, 32, 0.15);
-  box-shadow: 0px 0px 30px 0px rgba(32, 32, 32, 0.15);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.top_courses:hover .thumb .overlay:before{
-  background-color: rgba(0,0,0,.4);
-  bottom: 0;
-  content:"";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.top_courses.home8:hover .thumb .overlay:before{
+
+
+/* .top_courses.home8:hover .thumb .overlay:before{
   background-color: rgba(25, 38, 117, .7);
 }
 .top_courses.home8 .wc_age_seat li a {
@@ -4205,7 +4162,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
+} */
 .top_courses .thumb .overlay a.tc_preview_course {
   bottom: 0;
   color: #ffffff;
@@ -4320,7 +4277,6 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   background-color: #f5f6fd;
 }
 .top_courses.home14 {
-  background-color: #fff;
   border: none;
   display: inline-flex;
   padding: 10px;
@@ -13054,7 +13010,7 @@ body.translated{
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
 }
 .cs_rwo_tabs.csv2 .nav-tabs .nav-link.active:before{
-  background-color: #ffffff;
+  background-color: #000000;
   content:"";
   height: 18px;
   left: 0;
@@ -13855,3 +13811,4 @@ header.header-nav.menu_style_home_one.new_style .sign_up_btn li.list_s{
   background-color: rgb(1, 46, 110);
   padding: 8px 25px;
 }
+

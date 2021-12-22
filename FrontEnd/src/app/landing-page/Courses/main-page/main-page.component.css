@@ -19,7 +19,7 @@
 
 }
 .breadcrumb_bg {
-    background-image: url('src/assets/images/bg-8.jpg');
+    background-image: url('/assets/images/bg-8.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,6 +165,14 @@
   content: 'closed';
   
 }
+/* .single-item-image a{
+  transition:transform .2s;
+}
+.single-item-image a:hover{
+  transform: scale(0.9);
+
+ 
+} */
  /* .button-default1 {background: #e25401 none repeat scroll 0 0;} */
 /*  */
 @media only screen and (max-width: 576px){
