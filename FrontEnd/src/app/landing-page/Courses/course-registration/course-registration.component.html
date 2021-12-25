@@ -7,48 +7,80 @@
 
   <div class="wrapper">
     <h2>Registration</h2>
-    <form novalidate #RegForm="ngForm">
+    <form novalidate #RegForm="ngForm"
+    (ngSubmit)="RegForm.form.valid">
+
+    
+    <div
+    *ngIf="(name.invalid && (name.dirty || name.touched|| submitted))" class='Errorlabel'>
+    <div *ngIf="name.errors?.['required']">
+        <p>First name is required</p>
+    </div>
+  </div>
+       
+
       <div class="input-box">
-        <input type="text" placeholder="Enter your name" required>
+        <input type="text" placeholder="Enter your name" name="name" #name="ngModel"  [(ngModel)]="CourseReg.name" required/>
       </div>
+
+      <div
+    *ngIf="(phoneno.invalid && (phoneno.dirty || phoneno.touched|| submitted))" class='Errorlabel'>
+    <div *ngIf="phoneno.errors?.['required']">
+        <p>Mobile number is required</p>
+    </div>
+  </div>
+   
       <div class="input-box">
-        <input type="text" placeholder="Enter your Mobile no." required>
+        <input type="text" placeholder="Enter your Mobile no." name="phoneno" #phoneno="ngModel"  [(ngModel)]="CourseReg.phoneno" required>
       </div>
+     
+      <div
+      *ngIf="(email.invalid && (email.dirty || email.touched|| submitted))" class='Errorlabel'>
+      <div *ngIf="email.errors?.['required']">
+          <p>Email is required</p>
+      </div>
+    </div>
+      
       <div class="input-box">
-        <input type="text" placeholder="Enter your email" required>
+        <input type="text" placeholder="Enter your email" name="email"  #email="ngModel"  [(ngModel)]="CourseReg.email" required>
       </div>
 
       <label for="" class="text-secondary fw-bold">Are you employed?</label>
       <div class="col-sm-10 p-1">
         
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios"
-                id="gridRadios1" value="1" >
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="1" required>
             <label class="form-check-label" for="gridRadios1">
                 Yes
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios"
-                id="gridRadios2" value="0">
+            <input class="form-check-input" type="radio" name="gridRadios"  id="gridRadios2" value="0" required>
             <label class="form-check-label" for="gridRadios2">
                 No
             </label>
         </div>
     </div>
 
-
-      <select id="selCourseId" name="courseId" class="inputBox p-1 " >
-        <option value="0" >--Select Your Course--</option>
-<!--<option value="2">ML</option></select> -->
-         <option value="20" amount="250"  class="inputBoxD"> Full Stack Development-MEAN</option>
+    <div class="input-box">
+      <input type="text" placeholder="--Select Your Course--" name="courseTitle"  #courseTitle="ngModel"  [(ngModel)]="CourseReg.courseTitle" required>
+    </div>
+      <!-- <select id="selCourseId" name="courseId" class="inputBox p-1 " >
+          <option value="0" >--Select Your Course--</option>
+          <option value="20" amount="250"  class="inputBoxD"> Full Stack Development-MEAN</option>
           <option value="21" amount="250" class="inputBoxD"> Data Science and Analytics</option>
           <option value="22" amount="250"  class="inputBoxD"> Cyber Security Analyst</option>
           <option value="23" amount="250"  class="inputBoxD"> Software Testing</option>
-</select>
-      
+</select> -->
+<div
+*ngIf="(graduation.invalid && (graduation.dirty || graduation.touched|| submitted))" class='Errorlabel'>
+<div *ngIf="graduation.errors?.['required']">
+    <p>highest degree is required</p>
+</div>
+</div>  
+
 <div class="input-box">
-  <input type="text" placeholder="Highest Degree" required>
+  <input type="text" placeholder="Highest Degree" name="courseTitle"  #graduation="ngModel"  [(ngModel)]="CourseReg.graduation"  required>
 </div>
 
 <div class="form-floating">
@@ -57,7 +89,8 @@
 </div>
 
       <div class="input-box button">
-        <input type="Submit" class="text-white" value="Register Now">
+        <input type="Submit" class="text-white" value="Register Now"  (mousedown)="submitted=true">
+        
       </div>
       <!-- <div class="text">
         <h3>Already have an account? <a href="#">Login now</a></h3>

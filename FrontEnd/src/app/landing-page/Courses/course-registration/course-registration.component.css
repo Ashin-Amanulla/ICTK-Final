@@ -42,7 +42,7 @@
     margin-top: 30px;
     max-width: 430px;
     width: 100%;
-    height:45rem;
+    height:54rem;
     background: #fff;
     padding: 34px;
     border-radius: 6px;
@@ -116,6 +116,7 @@
     border-bottom-width: 2.5px;
     border-radius: 6px;
     transition: all 0.3s ease;
+  
     
     
   }
@@ -160,13 +161,13 @@
   .fas{
       position: relative;
       right: 25rem;
-      bottom: 18rem;
+      bottom: 22rem;
       font-size: 60px;
-      color: rgb(105 56 255 / 95%); 
+      color: rgba(213, 216, 221, 0.95); 
       
   }
   .fas:hover{
-      color: rgb(3, 175, 243);
+      color: rgb(146, 150, 146);
       cursor: pointer;
       
   }
@@ -178,6 +179,14 @@
 }
 textarea {
   resize: none;
+}
+
+.Errorlabel{
+ position: relative;
+ top: 8px;
+  left: 2px;
+  font-weight: 600;
+  color: red;
 }
   @media only screen and (max-width: 600px){
     .fas{

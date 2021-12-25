@@ -8,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class CourseRegistrationComponent implements OnInit {
   
   title = "REGISTRATION"
+  submitted: boolean = false;
+
+  CourseReg = {
+    courseId: '',
+    courseTitle: '',
+    name: '',
+    email: '',
+    phoneno: '',
+    employeeStatus: '',
+    graduation: '',
+    comment: ''
+  };
+
+
   constructor() { }
 
   ngOnInit(): void {
